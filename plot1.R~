@@ -1,0 +1,7 @@
+plot1 <- function(pf) {
+powerfile<-read.table("pf",header=TRUE,sep=";",na.strings="?")
+power_s<-(subset(powerfile,(powerfile$Date=="2/2/2007" | powerfile$Date=="1/2/2007")))
+power_s1$DT<-dmy_hms(paste(power_splot1$Date,power_s1$Time))
+hist(power_s1$Global_active_power)
+dev.copy(png, file = "plot1.png")
+}
